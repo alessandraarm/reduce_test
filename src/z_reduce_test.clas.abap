@@ -17,7 +17,11 @@ CLASS z_reduce_test DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS z_reduce_test IMPLEMENTATION.
+
+
+CLASS Z_REDUCE_TEST IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA: lt_employees   TYPE ty_employee_tt,
@@ -26,7 +30,7 @@ CLASS z_reduce_test IMPLEMENTATION.
     lt_employees = VALUE #( ( name = 'Maria' experience_years = 8 salary = 6000 )
                             ( name = 'João'  experience_years = 3 salary = 4000 )
                             ( name = 'Pedro' experience_years = 6 salary = 5500 )
-                            ( name = 'Ana'   experience_years = 4 salary = 4800 ) ).
+                            ( name = 'Rita'  experience_years = 4 salary = 4800 ) ).
 
     l_total_sal = REDUCE i( INIT l_amount = 0
                             FOR ls_employee IN lt_employees

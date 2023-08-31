@@ -6,7 +6,6 @@
     <CTEXT>Reduce Command Test</CTEXT>
     <COMP_POSID>BC-ABA-LA</COMP_POSID>
     <COMPONENT>HLB0100065</COMPONENT>
-    <TPCLASS>X</TPCLASS>
    </DEVC>
   </asx:values>
  </asx:abap>
